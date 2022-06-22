@@ -1,0 +1,48 @@
+.game__container {
+  display: grid;
+  grid-row-gap: 32px;
+}
+.game__header {
+  display: grid;
+  grid-row-gap: 20px;
+  justify-items: center;
+}
+.game__grid {
+  background-color: var(--blue-grey);
+  display: grid;
+  grid-template-columns: repeat(3, var(--slot-size));
+  position: relative;
+  border-radius: 12px;
+  overflow: hidden;
+}
+.game__slot {
+  width: var(--slot-size);
+  height: var(--slot-size);
+  transition: background-color 0.25s ease-in-out;
+}
+.game__slot.left {
+  border-left: var(--slot-border) solid var(--dark-blue);
+}
+.game__slot.top {
+  border-top: var(--slot-border) solid var(--dark-blue);
+}
+.game__slot.right {
+  border-right: var(--slot-border) solid var(--dark-blue);
+}
+.game__slot.bottom {
+  border-bottom: var(--slot-border) solid var(--dark-blue);
+}
+.game__slot.empty:hover {
+  background-color: var(--blue-grey);
+}
+.game__slot.won {
+  transition: background-color 0.25s ease-in-out;
+  background-color: var(--green);
+}
+.game__slot.draw {
+  background-color: var(--dark-blue);
+  border-color: var(--blue-grey);
+}
+.game__slot.draw  * {
+  color: var(--grey) !important;
+}

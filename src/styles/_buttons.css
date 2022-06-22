@@ -1,0 +1,40 @@
+
+.btn {
+  cursor: pointer;
+  padding: 12px 18px;
+  border-radius: 4px;
+  font-weight: 600;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.btn__dk-blue {
+  background-color: var(--dk-blue);
+  color: #fff;
+  border: 2px solid var(--dk-blue);
+  transition: all 0.25s ease-in-out;
+}
+.btn__dk-blue:hover {
+  background-color: #fff;
+  color: var(--dk-blue);
+}
+.btn__blue {
+  background-color: var(--blue);
+  color: #fff;
+  border: 2px solid var(--blue);
+  transition: all 0.25s ease-in-out;
+}
+.btn__blue:hover {
+  background-color: #fff;
+  color: var(--blue);
+}
+.btn__blue-grey {
+  background-color: var(--blue-grey);
+  color: var(--dark-blue);
+  border: 2px solid var(--blue-grey);
+  transition: all 0.25s ease-in-out;
+}
+.btn__blue-grey:hover {
+  background-color: var(--dark-blue);
+  color: var(--blue-grey);
+}

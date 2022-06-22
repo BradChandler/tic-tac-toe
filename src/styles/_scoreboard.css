@@ -1,0 +1,19 @@
+.scoreboard {
+  border-collapse: collapse;
+  border-spacing: 0;
+  border-radius: 4px;
+  overflow: hidden;
+}
+.scoreboard thead {
+  background-color: var(--blue-grey);
+  font-weight: bold;
+}
+.scoreboard td {
+  padding: 8px 6px;
+}
+.scoreboard tbody tr:first-child {
+  background-color: var(--grey)
+}
+.scoreboard tbody tr:nth-child(2) {
+  background-color: var(--white)
+}

@@ -1,0 +1,95 @@
+:root {
+  /* colors */
+  --dark-blue: #274156;
+  --blue: #1c6e8c;
+  --blue-grey: #9fadb9;
+  --grey: #d0ccd0;
+  --white: #fbfcff;
+  --red: #ff0000;
+  --orange: #ff6b00;
+  --yellow: #ffc700;
+  --green: #007e59;
+  /* sizes */
+  --text-xs: 0.5rem;
+  --text-sm: 0.75rem;
+  --text-md: 1.25rem;
+  --text-lg: 1.75rem;
+  --text-xl: 2.5rem;
+  /* game board */
+  --slot-border: 2px;
+  --slot-size: 100px;
+}
+@media (min-width: 576px) {
+  :root {
+    --slot-border: 3px;
+    --slot-size: 120px;
+  }
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: var(--dark-blue);
+  letter-spacing: 0.05rem;
+}
+
+body {
+  background-color: var(--blue);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+h1, h2, h3 {
+  font-size: var(--text-lg);
+  font-weight: 700;
+}
+h2, h3 {
+  font-size: var(--text-md);
+  font-weight: 600;
+}
+h3 {
+  font-weight: 500
+}
+
+a, a:where(:hover, :active, :visited) {
+  color: var(--blue);
+  cursor: pointer;
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+input, select, textarea {
+  padding: 0.65rem 0.75rem;
+  border: 1px solid var(--dark-blue);
+  outline: transparent;
+  border-radius: 4px;
+}
+input:where([type="radio"], [type="checkbox"]) {
+  width: 1.25rem;
+  height: 1.25rem;
+}
+
+:where(input, select, textarea)::placeholder {
+  color: var(--grey);
+}
+
+@media (min-width: 768px) {
+  h1, h2, h3 {
+    font-size: var(--text-xl);
+    font-weight: 700;
+  }
+  h2, h3 {
+    font-size: var(--text-lg);
+    font-weight: 600;
+  }
+  h3 {
+    font-weight: 500
+  }
+}

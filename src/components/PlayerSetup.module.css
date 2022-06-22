@@ -1,0 +1,25 @@
+.section {
+  padding: 32px 40px;
+  border-radius: 10px;
+  background-color: var(--blue-grey);
+}
+.form {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 12px;
+}
+.form label {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 4px;
+  font-weight: 500;
+  position: relative;
+}
+
+.error {
+   top: 100%;
+   color: var(--red);
+   font-style: italic;
+   font-size: 0.75rem;
+   margin-top: -2px;
+}
